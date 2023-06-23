@@ -8,7 +8,7 @@ import random
 import pandas as pd
 import numpy as np
 
-import missingno as msno
+#import missingno as msno
 
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
