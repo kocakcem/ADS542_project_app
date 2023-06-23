@@ -94,8 +94,7 @@ def main():
   euribor3m = st.number_input("euribor 3 month rate - daily indicator")
   nr.employed = st.number_input("number of employees - quarterly indicator")
 
-cols=
-{
+cols = {
   "age":age,
   "job":job,
   "marital":marital,
