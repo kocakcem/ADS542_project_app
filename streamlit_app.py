@@ -49,7 +49,9 @@ def main():
   #contacted_before = st.number_input("Enter 1 If The Person Was Not Contacted before i.e pdays Is 999 Else Enter 0",)
   pdays = st.number_input("Number of days that passed by after the client was last contacted from a previous campaign", min_value=0, max_value=999)
   previous = st.number_input("number of contacts performed before this campaign and for this client", min_value=0)
-  poutcome = st.number_input("outcome of the previous marketing campaign", options = ["failure","success"])
+  
+  poutcome = st.selectbox("outcome of the previous marketing campaign", options = ["failure","success"])
+  
   emp.var.rate = st.number_input("employment variation rate - quarterly indicator")
   cons.price.idx = st.number_input("consumer price index - monthly indicator")
   cons.conf.idx = st.number_input("consumer confidence index - monthly indicator")
