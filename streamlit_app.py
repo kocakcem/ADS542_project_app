@@ -52,11 +52,11 @@ def main():
   
   poutcome = st.selectbox("outcome of the previous marketing campaign", options = ["failure","success"])
   
-  emp.var.rate = st.number_input("employment variation rate - quarterly indicator")
-  cons.price.idx = st.number_input("consumer price index - monthly indicator")
-  cons.conf.idx = st.number_input("consumer confidence index - monthly indicator")
+  emp_var_rate = st.number_input("employment variation rate - quarterly indicator")
+  cons_price_idx = st.number_input("consumer price index - monthly indicator")
+  cons_conf_idx = st.number_input("consumer confidence index - monthly indicator")
   euribor3m = st.number_input("euribor 3 month rate - daily indicator")
-  nr.employed = st.number_input("number of employees - quarterly indicator")
+  nr_employed = st.number_input("number of employees - quarterly indicator")
 
   cols = {
     "age" : age,
@@ -73,11 +73,11 @@ def main():
     "pdays":pdays,
     "previous":previous,
     "poutcome":poutcome,
-    "emp.var.rate":emp.var.rate,
-    "cons.price.idx":cons.price.idx,
-    "cons.conf.idx":cons.conf.idx,
+    "emp.var.rate":emp_var_rate,
+    "cons.price.idx":cons_price_idx,
+    "cons.conf.idx":cons_conf_idx,
     "euribor3m":euribor3m,
-    "nr.employed":nr.employed
+    "nr.employed":nr_employed
   }
   
   df = pd.DataFrame(cols,index=[0])
