@@ -11,7 +11,7 @@ from sklearn.preprocessing import  LabelEncoder
 
 
 
-model = pickle.load(open("dtcCV_obj","rb"))
+model = joblib.load("dctCV_obj.pkl")
 
 def predict(model, df_imput):
   predictions_df = model.predict(df_input)
