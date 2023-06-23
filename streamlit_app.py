@@ -10,7 +10,7 @@ import numpy as np
 
 #import missingno as msno
 
-from statsmodels.stats.outliers_influence import variance_inflation_factor
+#from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 from sklearn.preprocessing import StandardScaler,MinMaxScaler, LabelEncoder, OneHotEncoder
 from sklearn.model_selection import train_test_split,KFold,GridSearchCV,RandomizedSearchCV
@@ -23,9 +23,9 @@ import tensorflow as tf
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.compose import ColumnTransformer
 
-from statsmodels.stats.outliers_influence import variance_inflation_factor
-from statsmodels.tools.tools import add_constant
-from sklearn.decomposition import PCA
+#from statsmodels.stats.outliers_influence import variance_inflation_factor
+#from statsmodels.tools.tools import add_constant
+#from sklearn.decomposition import PCA
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -36,9 +36,9 @@ import os
 from sklearn.impute import KNNImputer, SimpleImputer
 from sklearn.metrics import f1_score, recall_score,roc_auc_score
 
-from patsy import dmatrices, dmatrix
+#from patsy import dmatrices, dmatrix
 
-from IPython.display import Audio
+#from IPython.display import Audio
 
 import xgboost as xgb
 from xgboost import XGBRegressor
