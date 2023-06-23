@@ -1,48 +1,10 @@
 import streamlit as st
-#import pandas as pd
-#import numpy as np
-import pickle
-#from sklearn.ensemble import RandomForest Regressor
-import random
-
 import pandas as pd
 import numpy as np
-
-#import missingno as msno
-
-#from statsmodels.stats.outliers_influence import variance_inflation_factor
-
-from sklearn.preprocessing import StandardScaler,MinMaxScaler, LabelEncoder, OneHotEncoder
-from sklearn.model_selection import train_test_split,KFold,GridSearchCV,RandomizedSearchCV
-from sklearn.linear_model import Ridge,Lasso,RidgeClassifier,LogisticRegression
-from sklearn import metrics
-from sklearn.metrics import confusion_matrix,ConfusionMatrixDisplay,mean_squared_error,classification_report,roc_curve,roc_auc_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.pipeline import Pipeline, make_pipeline
-import tensorflow as tf
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.compose import ColumnTransformer
-
-#from statsmodels.stats.outliers_influence import variance_inflation_factor
-#from statsmodels.tools.tools import add_constant
-#from sklearn.decomposition import PCA
-
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 import joblib
-import os
+import warnings
+from sklearn.preprocessing import  LabelEncoder
 
-from sklearn.impute import KNNImputer, SimpleImputer
-from sklearn.metrics import f1_score, recall_score,roc_auc_score
-
-#from patsy import dmatrices, dmatrix
-
-#from IPython.display import Audio
-
-import xgboost as xgb
-from xgboost import XGBRegressor
-from xgboost import XGBClassifier
 
 
 
