@@ -56,42 +56,42 @@ def main():
   euribor3m = st.number_input("euribor 3 month rate - daily indicator")
   nr.employed = st.number_input("number of employees - quarterly indicator")
 
-cols = {
-  "age" : age,
-  "job":job,
-  "marital":marital,
-  "education":education,
-  "default":default,
-  "housing":housing,
-  "loan":loan,
-  "contact":contact,
-  "month":month,
-  "day_of_week":day_of_week,
-  "campaign":campaign,
-  "pdays":pdays,
-  "previous":previous,
-  "poutcome":poutcome,
-  "emp.var.rate":emp.var.rate,
-  "cons.price.idx":cons.price.idx,
-  "cons.conf.idx":cons.conf.idx,
-  "euribor3m":euribor3m,
-  "nr.employed":nr.employed
-}
-
-df = pd.DataFrame(cols,index=[0])
+  cols = {
+    "age" : age,
+    "job":job,
+    "marital":marital,
+    "education":education,
+    "default":default,
+    "housing":housing,
+    "loan":loan,
+    "contact":contact,
+    "month":month,
+    "day_of_week":day_of_week,
+    "campaign":campaign,
+    "pdays":pdays,
+    "previous":previous,
+    "poutcome":poutcome,
+    "emp.var.rate":emp.var.rate,
+    "cons.price.idx":cons.price.idx,
+    "cons.conf.idx":cons.conf.idx,
+    "euribor3m":euribor3m,
+    "nr.employed":nr.employed
+  }
+  
+  df = pd.DataFrame(cols,index=[0])
 
 
   
 
-if st.button("Predict"):
-  df = encoder(df)
-  prediction = predict(model, df)
-
-  if prediction >= 0.725455:
-    prediction ="Yes"
-  else:
-    prediction = "No"
-  st.success(f"Prediction : {prediction}")
+  if st.button("Predict"):
+    df = encoder(df)
+    prediction = predict(model, df)
+  
+    if prediction >= 0.725455:
+      prediction ="Yes"
+    else:
+      prediction = "No"
+    st.success(f"Prediction : {prediction}")
 
 if __name__ == "__main__":
   main()
