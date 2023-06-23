@@ -32,7 +32,7 @@ def main():
   st.write("Note there is no option to select duration as the duration is not known before a call is performed")
   st.write("As its also stated in the source of the data and notepad of the project duration needs to be removed for realistic prediction")
 
-  age = st.number_input("Age", min_value=0, max_value=100,step=1)
+  age = st.number_input("Select age", min_value=0, max_value=100,step=1)
   job = st.selectbox("Select Job", options = ["admin.","blue-collar","entrepreneur","housemaid","management","retired","self-employed","services","student","technician","unemployed","unknown"])
   marital = st.selectbox("Select Marital Status", options = ["divorced","married","single"])
   education = st.selectbox("Select Education Level", options = ["basic.4y","basic.6y","basic.9y","high.school","illiterate","professional.course","university.degree"])
@@ -57,7 +57,7 @@ def main():
   nr.employed = st.number_input("number of employees - quarterly indicator")
 
 cols = {
-  "age":age,
+  "age" : age,
   "job":job,
   "marital":marital,
   "education":education,
