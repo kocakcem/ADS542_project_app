@@ -1,2 +1,3 @@
-scikitlearn
+streamlit
+scikit-learn
 joblib
